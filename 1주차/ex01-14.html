@@ -14,10 +14,10 @@
             관련 태그부분 모두에게 속성 적용
         -->
         <script>
-            function show(){
+            function show(){ //<img>에 이미지 달기
                 document.getElementById("fig").src="ElvisPresley.jpg";
             }
-            function hide(){
+            function hide(){ //<img>에 이미지 제거
                 document.getElementById("fig").src="";
             }
         </script>
@@ -25,7 +25,7 @@
     <body>
         <h3 onmouseover="show()" onmouseout="hide()">Elvis Presley</h3>
         <hr>
-        <div><img id="fig" src=""></div>
+        <div><img id="fig" src=""></div><!--이미지 출력 장소/ 이미지 없는 체로 시작-->
         He was an American singer and actor. In Novembersd
         1956, he made his film debut in <span>Love Me Tender</span>.
         He is often referred to as "<span>the King of Rock and Roll</span>".
