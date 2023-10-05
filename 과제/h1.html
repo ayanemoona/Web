@@ -2,23 +2,82 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>HTML5 문서 구조 시맨틱 태그 사용</title>
+        <title>HTML 구조화 연습 과제</title>
         <style>
             html, body{margin: 0;padding: 0;height: 100%;}
-            footer{width: 100%;height: 15%;clear:both;background-color: plum;}
-            header{width: 100%;height: 15%;background-color: orange;}
-            nav{width: 100%;height: 5%;background-color: orange;}
-            section{width: 70%;height: 70%;float: left;background-color: olivedrab;}
-            aside{width: 15%;height: 70%;float:left;background-color: orange;}
-            
+            hr{border:5px solid yellowgreen;}
+            header{width: 100%;height: 15%;background-color: rgb(16, 240, 124);}
+            nav{width: 100%;height: 8%;float:right;background-color: orange;}
+            section{width: 70%;height: 200%;float:left;background-color: olivedrab;}
+            aside{width: 30%;height: 180%;float:right;background-color: rgb(228, 25, 126);}
+            article{width: 30%;height: 20%;float:right;background-color: gold;color: blueviolet}
+            footer{width: 100%;height: 20%;clear:both;background-color: plum;font-size: 15px;}
             </style>
     </head>
     <body>
         <header>header</header>
-        <nav>nav</nav>
-        <section>section</section>
-        <aside>aside</aside>
-        <footer>footer</footer>
+        <nav>
+            <a href="#A">소년기</a>
+            <a href="#B">청년기</a>
+            <a href="#C">장년기</a>
+            <a href="#D">말년기</a>
+
+        </nav>
+        
+        <section>
+            <h3 title="상상의 세계가 풍부하게 담겨있습니다."id="A">소년기</h3>
+            <hr>
+
+            <h3 title="상상의 세계가 풍부하게 담겨있습니다."id="B">소년기</h3>
+            가나다라마바사<br>
+            가나다라마바사<br>
+            가나다라마바사<br>
+            가나다라마바사<br>
+            가나다라마바사<br>
+            가나다라마바사<br>
+            <hr>
+            <h3 title="상상의 세계가 풍부하게 담겨있습니다."id="C">장년기</h3>
+            <pre>
+                여가 : 돈 걱정없이 여행 다녀옴
+                돈 벌고 싶당
+            </pre>
+            <hr>
+            <h3 title="상상의 세계가 풍부하게 담겨있습니다."id="D">말년기</h3>
+            <p>
+                집은 도시가 아니라 <b>적당히 자연이 있는 곳</b>에서
+
+            </p>
+            가나다라마바사<br>
+            가나다라마바사<br>
+            가나다라마바사<br>
+            가나다라마바사<br>
+            가나다라마바사<br>
+            가나다라마바사<br>
+            <hr>
+        </section>
+
+        <article>
+            <ul>
+                <h4>이 름 : 박문아<br>
+                학 번 : 2022320016</h4>
+            </ul>
+        </article>
+        
+        <aside>
+            <h3>목차</h3>
+            <ul>
+                <li><a href="#A">소년기</a></li>
+                <li><a href="#B">청년기</a></li>
+                <li><a href="#C">장년기</a></li>
+                <li><a href="#D">말년기</a></li>
+            </ul>
+        </aside>
+
+        <footer>
+            E-mail :ayanemoona@naver.com <br>
+            Tel : 010-1234-5678
+
+        </footer>
         
     </body>
 </html>
