@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>애니메이션</title>
+<style>
+@keyframes bomb {
+	10% {  font-size : 100%;text-align: left;color:red}
+    20% { color : orange; } 
+    30% { color : yellow; } 
+    40% { color : green; } 
+    50% { color : blue; } 
+    50% { color : darkblue; } translate
+	to { color : purple;font-size : 700%;text-align: right;}
+}
+/* translate 로 위치 바꾸기 */
+h3 {
+	animation-name : bomb;
+	animation-duration : 7s;
+    
+	animation-iteration-count : infinite;
+}
+</style></head>
+<body>
+<h3>AI소프트웨어학과 화이팅!</h3>
+<hr>
+<p> 글자가 3초동안 500%에서 시작하여 
+100%로 바뀌는 애니메이션입니다. 
+무한 반복합니다.</p>
+</body>
+</html>
