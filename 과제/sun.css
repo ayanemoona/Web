@@ -1,0 +1,44 @@
+span{color: rgb(118, 118, 118);}
+li:hover { background : antiquewhite; }
+li{padding-left : 20px ;padding-bottom: 5px;}
+.news:hover{color: rgb(0, 0, 0);}
+.sport:hover{color: rgb(0, 0, 0);}
+.buy:hover{color: rgb(0, 0, 0);}
+div{margin-bottom : 10px;border: 1px solid rgb(130, 130, 130);border-radius : 10px;background-color: white;
+    padding-bottom: 5px;padding-left: 5px;margin-right: 10px;margin-top: 10px;}
+ul h2{
+	display : inline-block;
+	border : 2px  ;
+    padding-top: 20px;
+	background : powderblue;
+	margin : 10px;
+    border-radius : 10px;
+	width : 250px; height : 50px;
+    text-align: center;   
+}
+ul h2 :hover{background : purple;color: powderblue;}
+table {
+	border : 1px solid rgb(0, 0, 0);
+	border-collapse : collapse;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+td, th {
+	border : 1px solid rgb(62, 62, 62);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+@keyframes textColorAnimation {
+    0% { color : blue; }
+    30% { color : green; } 
+    100% { color : red; }
+}
+h2 span {
+    animation-name : textColorAnimation; 
+    animation-duration : 5s;
+    animation-iteration-count : infinite; 
+    text-align: center;
+}
+#blue >span{color: blue;}
+
