@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>계산기</title>
+        <link href="moon.css" type="text/css" rel="stylesheet">
+        <script src="calc1_2022320016.js"></script>
+        <script src="calc2_2022320016.js"></script>
+        <script src="calc3_2022320016.js"></script>
+
+    </head>
+    <body>
+        <section>
+            <article>
+                <h1>산술연산</h1>
+                
+                <hr>
+                <table border=""1>
+                    <tr>
+                    <td colspan="4">
+                        <input type="text" id="display">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <input type="text" id="result">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" onclick="reset()">AC</td>
+                        <td onclick="add('/')">/</td>
+                    </tr>
+                    <tr>
+                        <td onclick="add('7')">7</td>
+                        <td onclick="add('8')">8</td>
+                        <td onclick="add('9')">9</td>
+                        <td onclick="add('*')">*</td>
+                    </tr>
+                    <tr>
+                        <td onclick="add('4')">4</td>
+                        <td onclick="add('5')">5</td>
+                        <td onclick="add('6')">6</td>
+                        <td onclick="add('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td onclick="add('1')">1</td>
+                        <td onclick="add('2')">2</td>
+                        <td onclick="add('3')">3</td>
+                        <td onclick="add('+')">+</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" onclick="add('0')">0</td>
+                        <td onclick="add('.')">.</td>
+                        <td onclick="calculate()">=</td>
+                    </tr>
+                </table>
+                <hr>
+            </article>
+            <article>
+                <h1>비트연산</h1>
+                <hr>
+                <table border="1">
+                    <tr>
+                        <td>X</td>
+                        <td colspan="2">
+                            <input type="text" id="num">
+                        </td>
+                        <td onclick="digit8('num','res')">&#8594;</td>
+                        <td colspan="3">
+                            <input type="text" id="res">
+                        </td>
+                        <td rowspan="3">AC</td>
+                    </tr>
+                    <tr>
+                        <td>Y</td>
+                        <td colspan="2">
+                            <input type="text" id="num2">
+                        </td>
+                        <td onclick="digit8('num2','res2')">&#8594;</td>
+                        <td colspan="3">
+                            <input type="text" id="res2">
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td onclick="bit('&')">&</td>
+                        <td onclick="bit('|')">|</td>
+                        <td onclick="bit('^')">^</td>
+                        <td>~</td>
+                        <td>>></td>
+                        <td><<</td>
+                        <td>>>></td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="8">
+                            <input type="text" id="res3">
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <h1>두 수 비교</h1>
+                <table border="1">
+                    <tr>
+                        <td>X</td>
+                        <td>
+                            <input type="text" id="com1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Y</td>
+                        <td><input type="text" id="com2"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" onclick="compare('com1','com2')">결과</td>
+                    </tr>
+                
+                    
+                </table>
+                <input type="text" id="compare_result">
+            </article>
+        </section>
+        
+    </body>
+</html>
